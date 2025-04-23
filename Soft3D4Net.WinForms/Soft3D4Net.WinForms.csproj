@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Soft3D4Net\Soft3D4Net.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="MainScreen.cs" />
+	  <Compile Update="Slider.cs">
+	    <SubType>UserControl</SubType>
+	  </Compile>
+	  <Compile Update="SliderIn.cs">
+	    <SubType>Component</SubType>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Models\elefant.dae">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Models\juliet.dae">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Models\parrot.dae">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Models\skull.dae">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Models\teapot.dae">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+</Project>
